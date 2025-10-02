@@ -21,24 +21,92 @@
   <div class="sidebar">
     <h2>Códigos Úteis</h2>
     <ul>
+      <li data-info="
+  <div style='text-align:center; padding:25px; line-height:1.6;'>
+    <h1 style='font-size:28px; color:#38bdf8; margin-bottom:10px;'> Bem-vindo ao CODEXA</h1>
+    <h3 style='color:#94a3b8; font-weight:normal;'>Seu espaço para aprender, praticar e ganhar produtividade</h3>
+    <p style='margin:20px 0;'>
+      Aqui você encontra <strong>exemplos de código</strong>, 
+      <strong>atalhos úteis</strong> e dicas para acelerar seu dia a dia como dev.  
+      Use esse espaço como um <span style='color:#38bdf8;'>laboratório interativo</span> 
+      para testar e aprender mais rápido!
+    </p>
+
+    <div style='background:#1e293b; padding:15px; border-radius:10px; margin-top:20px;'>
+      <h3 style='margin-top:0; color:#38bdf8;'> Dicas rápidas</h3>
+      <ul style='list-style:none; padding:0; color:#ffffff;'>
+        <li> Clique em um item da barra lateral para ver detalhes.</li>
+        <li> Explore os atalhos de teclado para ganhar agilidade.</li>
+        <li> Veja os exemplos prontos e adapte ao seu código.</li>
+      </ul>
+    </div>
+
+    <p style='margin-top:25px; font-size:14px; color:#94a3b8;'>
+       Dica: Comece explorando <strong>IF / ELSE</strong> para ver exemplos
+    </p>
+  </div>
+">HOME</li>
       <li
         data-info='
-          <p><strong>IF:</strong> Verifica uma condição e executa um bloco se for verdadeira.</p>
-          <pre><code class="language-javascript">if (condicao) {
-  // código
-}</code></pre>
+        <p>&nbsp;</p>
+          <p><strong>Java</strong> 
+          <pre>
+            <code class="language-java">public class ExemploIf {
+              public static void main(String[] args) {
+                  int nota = 75;
 
-          <p><strong>ELSE:</strong> Executa se a condição do IF for falsa.</p>
-          <pre><code class="language-javascript">else {
-  // código
-}</code></pre>
+                  if (nota >= 90) {
+                      System.out.println("Excelente — nota A");
+                  } else if (nota >= 75) {
+                      System.out.println("Muito bom — nota B");
+                  } else if (nota >= 60) {
+                      System.out.println("Satisfatório — nota C");
+                  } else {
+                      System.out.println("Insuficiente — reprovado");
+                  }
+                }
+              }
+            </code>
+          </pre>
 
-          <p><strong>IF-ELSE:</strong> Combina IF e ELSE para decisões completas.</p>
-          <pre><code class="language-javascript">if (condicao) {
-  // código
-} else {
-  // código alternativo
-}</code></pre>
+        <p>&nbsp;</p>
+          <p><strong>Python</strong> 
+          <pre>
+            <code class="language-python">def verificar_nota(nota):
+              if nota >= 90:
+                print("Excelente — nota A")
+              elif nota >= 75:
+                print("Muito bom — nota B")
+              elif nota >= 60:
+                print("Satisfatório — nota C")
+              else:
+                print("Insuficiente — reprovado")
+
+              # Exemplo de uso:
+              verificar_nota(75)
+            </code></pre>
+          </pre>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+          <p><strong>JavaScript</strong></p>
+          <pre>
+            <code class="language-javascript">
+                function verificarNota(nota) {
+                  if (nota >= 90) {
+                    console.log("Excelente — nota A");
+                  } else if (nota >= 75) {
+                    console.log("Muito bom — nota B");
+                  } else if (nota >= 60) {
+                    console.log("Satisfatório — nota C");
+                  } else {
+                    console.log("Insuficiente — reprovado");
+                  }
+                }
+                // Exemplo de uso:
+                verificarNota(75);
+            </code>
+          </pre>
         '
       >
         IF / ELSE / IF-ELSE
@@ -67,12 +135,31 @@
   </div>
 
   <div class="content">
-    <h1>Bem-vindo!</h1>
+    <h1>CODEXA</h1>
     <div id="info" class="info-box">
-      <p><em>Nenhum código selecionado até o momento..</em></p>
-    </div>
-  </div>
+       <div style='text-align:center; padding:25px; line-height:1.6;'>
+    <h1 style='font-size:28px; color:#38bdf8; margin-bottom:10px;'> Bem-vindo ao CODEXA</h1>
+    <h3 style='color:#94a3b8; font-weight:normal;'>Seu espaço para aprender, praticar e ganhar produtividade</h3>
+    <p style='margin:20px 0;'>
+      Aqui você encontra <strong>exemplos de código</strong>, 
+      <strong>atalhos úteis</strong> e dicas para acelerar seu dia a dia como dev.  
+      Use esse espaço como um <span style='color:#38bdf8;'>laboratório interativo</span> 
+      para testar e aprender mais rápido!
+    </p>
 
+    <div style='background:#1e293b; padding:15px; border-radius:10px; margin-top:20px;'>
+      <h3 style='margin-top:0; color:#38bdf8;'> Dicas rápidas</h3>
+      <ul style='list-style:none; padding:0; color:#ffffff;'>
+        <li> Clique em um item da barra lateral para ver detalhes.</li>
+        <li> Explore os atalhos de teclado para ganhar agilidade.</li>
+        <li> Veja os exemplos prontos e adapte ao seu código.</li>
+      </ul>
+    </div>
+
+    <p style='margin-top:25px; font-size:14px; color:#94a3b8;'>
+       Dica: Comece explorando <strong>IF / ELSE</strong> para ver exemplos
+    </p>
+  </div>
   <script>
     const items = document.querySelectorAll(".sidebar ul li");
     const infoBox = document.getElementById("info");
