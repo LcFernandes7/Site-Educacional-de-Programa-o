@@ -1,3 +1,4 @@
+/* ================= Sidebar ================= */
 .sidebar {
   width: 250px;
   height: 100vh;
@@ -36,9 +37,71 @@
   background: #3f3f60;
 }
 
-/* Conteúdo principal */
 .content {
-  margin-left: 270px; /* deixa espaço para a sidebar */
+  margin-left: 270px; /* espaço da sidebar */
   padding: 20px;
   flex: 1;
+}
+
+.main-title {
+  background: #1e1e2f;           /* mesma cor da sidebar */
+  color: white;
+  text-align: center;
+  padding: 12px 0;               /* barra fina */
+  margin: 0 0 20px 0;             /* só margem embaixo */
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 8px;             /* cantos arredondados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra sutil */
+}
+
+.home-container {
+  text-align: center;
+  padding: 25px;
+  line-height: 1.6;
+}
+
+.home-title {
+  display: block;
+  margin: 0 auto 10px auto; /* centraliza e dá margem inferior */
+  max-width: 800px;          /* ajusta largura máxima */
+  height: auto;              /* mantém proporção */
+}
+
+.home-subtitle {
+  color: #94a3b8;
+  font-weight: normal;
+}
+
+.home-text {
+  margin: 20px 0;
+}
+
+.highlight {
+  color: #38bdf8;
+}
+
+.tips-box {
+  background: #1e1e2f;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.tips-title {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+  color: #ffffff;
+}
+
+.home-note {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #94a3b8;
 }
