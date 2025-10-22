@@ -281,6 +281,79 @@
 </li>
 
 
+<li
+  data-info='
+  <div style="margin-bottom: 20px;">
+    <p>Cáuculos usando a biblioteca math</p>
+
+  </div>
+  <p>&nbsp;</p>
+
+  <p><strong>Java</strong></p>
+  <pre>
+    <code class="language-java">
+      import java.util.Scanner;
+
+      public class CalculosMath {
+        public static void main(String[] args) {
+          Scanner entrada = new Scanner(System.in);
+          double numero;
+
+          System.out.print("Digite um número: ");
+          numero = entrada.nextDouble();
+
+          double raiz = Math.sqrt(numero);
+          double potencia = Math.pow(numero, 2);
+          double seno = Math.sin(numero);
+
+          System.out.println("Raiz quadrada: " + raiz);
+          System.out.println("Potência ao quadrado: " + potencia);
+          System.out.println("Seno (em radianos): " + seno);
+
+          entrada.close();
+        }
+      }
+    </code>
+  </pre>
+
+  <p>&nbsp;</p>
+  <p><strong>Python</strong></p>
+  <pre>
+    <code class="language-python">
+      import math
+
+      numero = float(input("Digite um número: "))
+
+      raiz = math.sqrt(numero)
+      potencia = math.pow(numero, 2)
+      seno = math.sin(numero)
+
+      print("Raiz quadrada:", raiz)
+      print("Potência ao quadrado:", potencia)
+      print("Seno (em radianos):", seno)
+    </code>
+  </pre>
+
+  <p>&nbsp;</p>
+  <p><strong>JavaScript</strong></p>
+  <pre>
+    <code class="language-javascript">
+      let numero = parseFloat(prompt("Digite um número:"));
+
+      let raiz = Math.sqrt(numero);
+      let potencia = Math.pow(numero, 2);
+      let seno = Math.sin(numero);
+
+      console.log("Raiz quadrada: " + raiz);
+      console.log("Potência ao quadrado: " + potencia);
+      console.log("Seno (em radianos): " + seno);
+    </code>
+  </pre>
+  '
+>
+  BIBLIOTECA MATH
+</li>
+
 <li data-info='
 <div style="margin-bottom: 20px;">
   <p>As <strong>funções</strong> são blocos de código reutilizáveis que executam uma tarefa específica. Elas ajudam a organizar o programa, evitando repetição de código e facilitando a manutenção.</p>
