@@ -21,34 +21,13 @@
   <div class="sidebar">
     <h2>Códigos Úteis</h2>
     <ul>
-      <li data-info="
-  <div class='home-container'>
-    
-    <h3 class='home-subtitle'>Seu espaço para aprender, praticar e ganhar produtividade</h3>
-    <p class='home-text'>
-      Aqui você encontra <strong>exemplos de código</strong>, 
-      <strong>atalhos úteis</strong> e dicas para acelerar seu dia a dia como dev.  
-      Use esse espaço como um <span class='highlight'>laboratório interativo</span> 
-      para testar e aprender mais rápido!
-    </p>
-
-    <div class='tips-box'>
-      <h3 class='tips-title'> Dicas rápidas</h3>
-      <ul class='tips-list'>
-        <li> Clique em um item da barra lateral para ver detalhes.</li>
-        <li> Explore os atalhos de teclado para ganhar agilidade.</li>
-        <li> Veja os exemplos prontos e adapte ao seu código.</li>
-      </ul>
-    </div>
-
-    <p class='home-note'>
-       Dica: Comece explorando <strong>IF / ELSE</strong> para ver exemplos
-    </p>
-  </div>
-">HOME</li>
-
-      <li
-        data-info='
+      <li>HOME</li>
+      
+      <li data-info='
+        <div style="margin-bottom: 20px;">
+          <p>As estruturas condicionais <strong>if</strong>, <strong>else if</strong> e <strong>else</strong> são usadas em programação para tomar decisões com base em condições. O <strong>if</strong> executa um bloco de código quando a condição é verdadeira. Se não for, pode-se usar o <strong>else if</strong> para testar outras possibilidades. Se nenhuma das condições for satisfeita, o <strong>else</strong> define uma ação padrão.</p>
+          <p>Essas estruturas são muito úteis para validar dados, controlar fluxos de execução, aplicar regras lógicas e tornar os programas mais dinâmicos e inteligentes.</p>
+        </div>
         <p>&nbsp;</p>
         <p><strong>Java</strong> 
         <pre>
@@ -113,7 +92,7 @@
         IF / ELSE / IF-ELSE
       </li>
 
-
+      
 
       
       <li data-info='
@@ -177,26 +156,470 @@
         FOR
       </li>
 
+  
+      <li              
+      data-info='
+      <div style="margin-bottom: 20px;">
+        <p>As <strong>estruturas condicionais</strong> permitem que o programa tome decisões com base em determinadas condições. Elas são fundamentais para controlar o fluxo de execução e reagir de forma diferente conforme os dados ou situações.</p>
+        <p>A mais comum é a instrução <strong>if</strong>, que executa um bloco de código se uma condição for verdadeira. Também é possível usar <strong>else</strong> para tratar o caso contrário e <strong>else if</strong> (ou <strong>elif</strong> em Python) para testar múltiplas possibilidades.</p>
+        <p>Outra estrutura comum é o <strong>switch</strong> (ou <strong>match</strong> em algumas linguagens modernas), usada para comparar uma variável com vários valores possíveis de forma mais organizada.</p>
+      </div>
+    
+      <p>&nbsp;</p>
+    
+      <p><strong>Java</strong></p>
+      <pre>
+        <code class="language-java">
+          import java.util.Scanner;
+    
+          public class ExemploDoWhile {
+            public static void main(String[] args) {
+              Scanner entrada = new Scanner(System.in);
+              int numero;
+    
+              do {
+                System.out.print("Digite um número positivo (0 para sair): ");
+                numero = entrada.nextInt();
+    
+                if (numero > 0) {
+                  System.out.println("Você digitou: " + numero);
+                }
+              } while (numero != 0);
+    
+              System.out.println("Programa encerrado.");
+              entrada.close();
+            }
+          }
+        </code>
+      </pre>
+    
+      <p>&nbsp;</p>
+      <p><strong>Python</strong></p>
+      <pre>
+        <code class="language-python">
+          numero = -1
+    
+          while True:
+            numero = int(input("Digite um número positivo (0 para sair): "))
+            if numero == 0:
+              break
+            print(f"Você digitou: {numero}")
+    
+          print("Programa encerrado.")
+        </code>
+      </pre>
+    
+      <p>&nbsp;</p>
+      <p><strong>JavaScript</strong></p>
+      <pre>
+        <code class="language-javascript">
+          let numero;
+    
+          do {
+            numero = parseInt(prompt("Digite um número positivo (0 para sair):"));
+    
+            if (numero > 0) {
+              console.log("Você digitou: " + numero);
+            }
+          } while (numero !== 0);
+    
+          console.log("Programa encerrado.");
+        </code>
+      </pre>
+      '
+    >
+      DO WHILE / WHILE TRUE
+    </li>
 
-      <li data-info="<p>Desfazer: Ctrl + Z</p>">Ctrl + Z → Desfazer</li>
-      <li>Ctrl + V → Colar</li>
-      <li>Ctrl + Z → Desfazer</li>
-      <li>Ctrl + Y → Refazer</li>
-      <li>Alt + Tab → Alternar janelas</li>
-      <li>Win + D → Mostrar área de trabalho</li>
-      <li>Ctrl + F → Buscar na página</li>
-      <li>Ctrl + S → Salvar</li>
-      <li>Ctrl + P → Imprimir</li>
-      <li>Ctrl + T → Nova aba</li>
-      <li>Ctrl + W → Fechar aba</li>
-      <li>Ctrl + Shift + T → Reabrir aba</li>
-      <li>Ctrl + N → Nova janela</li>
-      <li>Win + L → Bloquear tela</li>
-      <li>Win + E → Abrir Explorer</li>
-      <li>Win + R → Executar</li>
-      <li>Alt + F4 → Fechar janela</li>
-      <li>Ctrl + Alt + Del → Opções de segurança</li>
-    </ul>
+
+      <li data-info='
+  <div style="margin-bottom: 20px;">
+    <p>Um <strong>array</strong> (ou vetor) é uma estrutura que permite armazenar vários valores em uma única variável, facilitando o acesso e a manipulação de conjuntos de dados. Cada elemento é acessado por um índice numérico.</p>
+    <p>Os arrays são muito úteis para guardar listas de nomes, números, resultados e qualquer tipo de dado que precise ser agrupado. É possível percorrer um array com laços <strong>for</strong> ou <strong>while</strong> para processar seus elementos.</p>
+  </div>
+
+  <p>&nbsp;</p>
+  <p><strong>Java</strong></p>
+  <pre>
+    <code class="language-java">
+      public class ExemploArray {
+        public static void main(String[] args) {
+          String[] nomes = {"Ana", "Bruno", "Carlos"};
+
+          for (int i = 0; i < nomes.length; i++) {
+            System.out.println("Nome: " + nomes[i]);
+          }
+        }
+      }
+    </code>
+  </pre>
+
+  <p>&nbsp;</p>
+  <p><strong>Python</strong></p>
+  <pre>
+    <code class="language-python">
+      nomes = ["Ana", "Bruno", "Carlos"]
+
+      for nome in nomes:
+        print(f"Nome: {nome}")
+    </code>
+  </pre>
+
+  <p>&nbsp;</p>
+  <p><strong>JavaScript</strong></p>
+  <pre>
+    <code class="language-javascript">
+      const nomes = ["Ana", "Bruno", "Carlos"];
+
+      for (let i = 0; i < nomes.length; i++) {
+        console.log("Nome: " + nomes[i]);
+      }
+    </code>
+  </pre>
+'>
+  ARRAYS
+</li>
+
+
+<li
+  data-info='
+  <div style="margin-bottom: 20px;">
+    <p>Cáuculos usando a biblioteca math</p>
+
+  </div>
+  <p>&nbsp;</p>
+
+  <p><strong>Java</strong></p>
+  <pre>
+    <code class="language-java">
+      import java.util.Scanner;
+
+      public class CalculosMath {
+        public static void main(String[] args) {
+          Scanner entrada = new Scanner(System.in);
+          double numero;
+
+          System.out.print("Digite um número: ");
+          numero = entrada.nextDouble();
+
+          double raiz = Math.sqrt(numero);
+          double potencia = Math.pow(numero, 2);
+          double seno = Math.sin(numero);
+
+          System.out.println("Raiz quadrada: " + raiz);
+          System.out.println("Potência ao quadrado: " + potencia);
+          System.out.println("Seno (em radianos): " + seno);
+
+          entrada.close();
+        }
+      }
+    </code>
+  </pre>
+
+  <p>&nbsp;</p>
+  <p><strong>Python</strong></p>
+  <pre>
+    <code class="language-python">
+      import math
+
+      numero = float(input("Digite um número: "))
+
+      raiz = math.sqrt(numero)
+      potencia = math.pow(numero, 2)
+      seno = math.sin(numero)
+
+      print("Raiz quadrada:", raiz)
+      print("Potência ao quadrado:", potencia)
+      print("Seno (em radianos):", seno)
+    </code>
+  </pre>
+
+  <p>&nbsp;</p>
+  <p><strong>JavaScript</strong></p>
+  <pre>
+    <code class="language-javascript">
+      let numero = parseFloat(prompt("Digite um número:"));
+
+      let raiz = Math.sqrt(numero);
+      let potencia = Math.pow(numero, 2);
+      let seno = Math.sin(numero);
+
+      console.log("Raiz quadrada: " + raiz);
+      console.log("Potência ao quadrado: " + potencia);
+      console.log("Seno (em radianos): " + seno);
+    </code>
+  </pre>
+  '
+>
+  BIBLIOTECA MATH
+</li>
+
+<li data-info='
+<div style="margin-bottom: 20px;">
+  <p>As <strong>funções</strong> são blocos de código reutilizáveis que executam uma tarefa específica. Elas ajudam a organizar o programa, evitando repetição de código e facilitando a manutenção.</p>
+  <p>Uma função pode receber <strong>parâmetros</strong> (valores de entrada) e pode ou não retornar um valor de saída. Essa estrutura é essencial para modularizar programas e criar comportamentos reutilizáveis.</p>
+</div>
+
+<p>&nbsp;</p>
+<p><strong>Java</strong></p>
+<pre>
+  <code class="language-java">
+    public class ExemploFuncao {
+      static int somar(int a, int b) {
+        return a + b;
+      }
+
+      public static void main(String[] args) {
+        int resultado = somar(5, 3);
+        System.out.println("Resultado: " + resultado);
+      }
+    }
+  </code>
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Python</strong></p>
+<pre>
+  <code class="language-python">
+    def somar(a, b):
+      return a + b
+
+    resultado = somar(5, 3)
+    print(f"Resultado: {resultado}")
+  </code>
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>JavaScript</strong></p>
+<pre>
+  <code class="language-javascript">
+    function somar(a, b) {
+      return a + b;
+    }
+
+    const resultado = somar(5, 3);
+    console.log("Resultado: " + resultado);
+  </code>
+</pre>
+'>
+FUNÇÕES
+</li>
+
+
+<li data-info='
+<div style="margin-bottom: 20px;">
+  <p>A estrutura <strong>switch case</strong> é usada para simplificar verificações de múltiplas condições que dependem do mesmo valor. Em vez de escrever vários <strong>if</strong> e <strong>else if</strong>, o <strong>switch</strong> compara o valor de uma variável com várias opções (<strong>cases</strong>).</p>
+  <p>Ela é ideal para menus, classificações, seleções de opções ou qualquer situação em que uma variável pode assumir valores bem definidos.</p>
+  <p>Em algumas linguagens, é necessário incluir o comando <strong>break</strong> para evitar que o código continue executando os próximos casos.</p>
+</div>
+
+<p>&nbsp;</p>
+<p><strong>Java</strong></p>
+<pre>
+  <code class="language-java">
+    public class ExemploSwitch {
+      public static void main(String[] args) {
+        int opcao = 2;
+
+        switch (opcao) {
+          case 1:
+            System.out.println("Opção 1 selecionada");
+            break;
+          case 2:
+            System.out.println("Opção 2 selecionada");
+            break;
+          case 3:
+            System.out.println("Opção 3 selecionada");
+            break;
+          default:
+            System.out.println("Opção inválida");
+        }
+      }
+    }
+  </code>
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Python</strong></p>
+<pre>
+  <code class="language-python">
+    # O Python não possui "switch", mas podemos simular com dicionários.
+    def escolher_opcao(opcao):
+      match opcao:
+        case 1:
+          print("Opção 1 selecionada")
+        case 2:
+          print("Opção 2 selecionada")
+        case 3:
+          print("Opção 3 selecionada")
+        case _:
+          print("Opção inválida")
+
+    escolher_opcao(2)
+  </code>
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>JavaScript</strong></p>
+<pre>
+  <code class="language-javascript">
+    function escolherOpcao(opcao) {
+      switch (opcao) {
+        case 1:
+          console.log("Opção 1 selecionada");
+          break;
+        case 2:
+          console.log("Opção 2 selecionada");
+          break;
+        case 3:
+          console.log("Opção 3 selecionada");
+          break;
+        default:
+          console.log("Opção inválida");
+      }
+    }
+
+    escolherOpcao(2);
+  </code>
+</pre>
+'>
+SWITCH CASE
+</li>
+
+<li data-info='
+  <div class="content-box">
+    Retorna um valor de uma função.</p>
+
+    <h3>Java</h3>
+    <pre><code class="language-java">
+public class Exemplo {
+    // Função que retorna a soma de dois números inteiros
+    static int somar(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int resultado = somar(5, 3);
+        System.out.println(resultado); // saída: 8
+    }
+}
+    </code></pre>
+
+    <h3>Python</h3>
+    <pre><code class="language-python">
+def somar(a, b):
+    return a + b
+
+resultado = somar(5, 3)
+print(resultado)  # saída: 8
+    </code></pre>
+
+    <h3>JavaScript</h3>
+    <pre><code class="language-javascript">
+function somar(a, b) {
+    return a + b;
+}
+
+let resultado = somar(5, 3);
+console.log(resultado); // saída: 8
+    </code></pre>
+
+  </div>
+'>RETURN</li>
+
+
+<li data-info='
+  <div class="content-box">
+    Troca uma palavra por outra dentro do texto.</p>
+
+    <h3>Java</h3>
+    <pre><code class="language-java">
+"Olá Snorlax".replace("Snorlax", "Guilherme");   // "Olá Guilherme"
+    </code></pre>
+
+    <h3>Python</h3>
+    <pre><code class="language-python">
+"Olá Snorlax".replace("Snorlax", "Guilherme")   # "Olá Guilherme"
+    </code></pre>
+
+    <h3>JavaScript</h3>
+    <pre><code class="language-javascript">
+"Olá Snorlax".replace("Snorlax", "Guilherme");   // "Olá Guilherme"
+    </code></pre>
+
+  </div>
+'>REPLACE</li>
+
+
+<li data-info='
+  <div class="content-box">
+    Define até que parte do texto deve ser mostrado.</p>
+
+    <h3>Java</h3>
+    <pre><code class="language-java">
+"Snorlax".substring(0, 3);   // "Sno"
+    </code></pre>
+
+    <h3>Python</h3>
+    <pre><code class="language-python">
+"Snorlax"[0:3]   # "Sno"
+    </code></pre>
+
+    <h3>JavaScript</h3>
+    <pre><code class="language-javascript">
+"Snorlax".substring(0, 3);   // "Sno"
+    </code></pre>
+
+  </div>
+'>SUBSTRING</li>
+
+
+<li data-info='
+  <div class="content-box">
+    Verifica se o texto termina com uma palavra específica.</p>
+
+    <h3>Java</h3>
+    <pre><code class="language-java">
+"Snorlax".endsWith("lax");   // true
+    </code></pre>
+
+    <h3>Python</h3>
+    <pre><code class="language-python">
+"Snorlax".endswith("lax")   # True
+    </code></pre>
+
+    <h3>JavaScript</h3>
+    <pre><code class="language-javascript">
+"Snorlax".endsWith("lax");   // true
+    </code></pre>
+  </div>
+  
+'>ENDSWITH</li>
+
+
+<li data-info='
+  <div class="content-box">
+    Verifica se o texto começa com uma palavra específica.</p>
+
+    <h3>Java</h3>
+    <pre><code class="language-java">
+"Snorlax".startsWith("Sno");   // true
+    </code></pre>
+  </div>
+
+    <h3>Python</h3>
+    <pre><code class="language-python">
+"Snorlax".startswith("Sno")   # True
+    </code></pre>
+
+    <h3>JavaScript</h3>
+    <pre><code class="language-javascript">
+"Snorlax".startsWith("Sno");   // true
+    </code></pre>
+
+  </div>
+'>STARTSWITH</li>
+
   </div>
 
   <div class="content">
@@ -206,11 +629,30 @@
         <img class="home-title" src="img/Gemini-image.png" alt="Bem-vindo ao CODEXA" />
         <h3 class="home-subtitle">Seu espaço para aprender, praticar e ganhar produtividade</h3>
         <p class="home-text">
-          Aqui você encontra <strong>exemplos de código</strong>, 
-          <strong>atalhos úteis</strong> e dicas para acelerar seu dia a dia como dev.  
-          Use esse espaço como um <span class="highlight">laboratório interativo</span> 
-          para testar e aprender mais rápido!
-        </p>
+  Bem-vindo ao seu espaço de aprendizado e prática!  
+  Aqui você vai encontrar <strong>exemplos de código práticos</strong>, 
+  <strong>atalhos úteis</strong> e diversas <strong>dicas de produtividade</strong> para facilitar o seu dia a dia como desenvolvedor.  
+  Use este ambiente como um <span class="highlight">laboratório interativo</span> onde é possível testar ideias, explorar novas linguagens, 
+  experimentar soluções criativas e entender na prática como o código se comporta.  
+  Seja você iniciante ou experiente, a proposta é simples: 
+  <strong>aprender de forma leve, dinâmica e constante</strong>.  
+  Aqui, cada tentativa conta, cada erro ensina e cada descoberta te deixa um passo mais perto da maestria no desenvolvimento!
+</p>
+
+<div class="devs-container">
+  <button id="showDevsBtn" class="encrypt-btn">Mostrar Devs</button>
+  <div id="devList" class="dev-list">
+    <p><strong>Desenvolvedores</strong></p>
+
+    <p>Lucas Fernandes<br><strong>RGM:</strong> 138042321</p>
+    <p>Gustavo Araújo<br><strong>RGM:</strong> 137567829</p>
+    <p>Rafael Pieri<br><strong>RGM:</strong> 41240766</p>
+    <p>Leonardo Xavier<br><strong>RGM:</strong> 138061171</p>
+    <p>Guilherme Dias<br><strong>RGM:</strong> 36499617</p>
+  </div>
+</div>
+
+
   
         <div class="tips-box">
           <h3 class="tips-title"> Dicas rápidas</h3>
@@ -229,21 +671,60 @@
   </div>
   
   <script>
-    const items = document.querySelectorAll(".sidebar ul li");
-    const infoBox = document.getElementById("info");
+  const items = document.querySelectorAll(".sidebar ul li");
+  const infoBox = document.getElementById("info");
+  const mainTitle = document.querySelector(".main-title");
 
-    items.forEach((item) => {
-      item.addEventListener("click", () => {
-        const info = item.getAttribute("data-info") || "";
-        infoBox.innerHTML = `<h2>${item.textContent}</h2>${info}`;
+  // Guarda o conteúdo inicial (tela HOME)
+  const conteudoHome = infoBox.innerHTML;
 
-        infoBox.querySelectorAll('pre code').forEach((block) => {
-          if (window.hljs && typeof hljs.highlightElement === 'function') {
-            hljs.highlightElement(block);
-          }
-        });
+  // Inicia com mensagem de boas-vindas
+  mainTitle.textContent = "Bem-vindo Dev :)";
+
+  // ===== Função para ativar o botão "Mostrar Devs" =====
+  function initShowDevsBtn() {
+    const btn = document.getElementById("showDevsBtn");
+    const devList = document.getElementById("devList");
+
+    if (!btn) return; // se o botão não existir, sai da função
+
+    // Remove event listeners anteriores para evitar duplicação
+    const newBtn = btn.cloneNode(true);
+    btn.parentNode.replaceChild(newBtn, btn);
+
+    newBtn.addEventListener("click", () => {
+      const visible = devList.style.display === "block";
+      devList.style.display = visible ? "none" : "block";
+    });
+  }
+
+  // Chama a primeira vez na carga da página
+  initShowDevsBtn();
+
+  // ===== Eventos da sidebar =====
+  items.forEach((item) => {
+    item.addEventListener("click", () => {
+      const info = item.getAttribute("data-info") || "";
+      const titulo = item.textContent.trim();
+
+      if (titulo.toUpperCase() === "HOME") {
+        infoBox.innerHTML = conteudoHome;
+        mainTitle.textContent = "Bem-vindo Dev :)";
+        initShowDevsBtn(); // RE-ativa o botão após recarregar a HOME
+      } else {
+        infoBox.innerHTML = `<div class="conteudo-box">${info}</div>`;
+        mainTitle.textContent = titulo;
+      }
+
+      // reaplica destaque de código se houver
+      infoBox.querySelectorAll("pre code").forEach((block) => {
+        if (window.hljs && typeof hljs.highlightElement === "function") {
+          hljs.highlightElement(block);
+        }
       });
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
